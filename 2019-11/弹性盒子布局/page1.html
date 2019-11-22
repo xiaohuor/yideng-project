@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* 教程：https://www.cnblogs.com/dreamperson/p/9367008.html */
+    .wrapper{
+      width: 600px;
+      background: #ddd;
+      height: 500px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /* justify-content: space-around; */
+      /* align-items: flex-end; */
+      /* flex-wrap: wrap-reverse;会让align-items效果翻转 */
+    }
+    .box{
+      width: 100px;
+      /* height: 100px; */
+      line-height: 100px;
+      text-align: center;
+      font-size: 30px;
+      background: yellowgreen;
+      border: 1px solid;
+      color: #fff;
+      flex-grow: 1;
+    }
+    .box:nth-of-type(1) {
+      height: 130px;
+    }
+    .box:nth-of-type(2) {
+      flex-grow: 2;
+    }
+    /* .box:nth-of-type(3) {
+      height: 230px;
+    }
+    .box:nth-of-type(4) {
+      height: 150px;
+    }
+    .box:nth-of-type(5) {
+      height: 130px;
+    }
+    .box:nth-of-type(6) {
+      height: 180px;
+    } */
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <!-- <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div> -->
+    <!-- <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+    <div class="box">11</div>
+    <div class="box">12</div>
+    <div class="box">13</div>
+    <div class="box">14</div> -->
+  </div>
+</body>
+</html>
